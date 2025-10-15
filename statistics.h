@@ -11,4 +11,5 @@ public:
     static double min(vector<double>& data);
     static double max(vector<double>& data);
     static double average(vector<double>& data);
+    static double median(vector<double>& data);
 };
