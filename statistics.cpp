@@ -49,3 +49,16 @@ double Statistics::max(vector<double>& data)
 
     return max;
 }
+
+
+double Statistics:: average(vector<double>& data)
+{
+    double sum = 0;
+
+    for(int i = 0; i < data.size(); i++)
+    {
+        sum = sum + data[i];
+    }
+
+    return sum/data.size();
+}

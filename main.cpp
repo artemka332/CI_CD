@@ -10,6 +10,7 @@ int main()
     cout << "Sum: " << Statistics::sum(numbers) << endl;
     cout << "Min: " << Statistics::min(numbers) << endl;
     cout << "Max: " << Statistics::max(numbers) << endl;
+    cout << "Average: " << Statistics::average(numbers) << endl;
 
     return 0;
 }
