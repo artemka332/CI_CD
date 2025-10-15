@@ -27,6 +27,6 @@ jobs:
 
     - name: Build
       run: cmake --build .
-    
-    -name: Test
-    run:   ctest --output-on-failure
+
+    - name: Test code
+      run: ctest --output-on-failure
