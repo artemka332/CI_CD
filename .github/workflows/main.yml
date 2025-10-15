@@ -19,7 +19,7 @@ jobs:
 
 
     - name: Configure
-      run: cmake .
+      run: cmake ..
 
     - name: Build
       run: cmake --build .
