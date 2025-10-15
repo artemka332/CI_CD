@@ -7,5 +7,5 @@ add_executable(main main.cpp statistics.cpp)
 
 # Unit-тесты
 enable_testing()                                        # включем поддержку тестирования в CMake
-add_executable(main statistics.cpp test_statistics.cpp)                     # выбрали исполняемый файл
+add_executable(test_statistics statistics.cpp test_statistics.cpp) # выбрали исполняемый файл
 add_test(NAME StatisticsTests COMMAND test_statistics)  # регистрируем тесты в системе CTest под именем StatisticsTests, который запускает исполняемый файл
