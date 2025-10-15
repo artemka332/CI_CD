@@ -5,7 +5,7 @@ using namespace std;
 
 int main() 
 {
-    vector<double> numbers = { 10.4, 2.3, 7.9, 4.4, 8.9 };
+    vector<double> numbers = { 11.0, 2.3, 7.9, 4.4, 8.9 };
 
     cout << "Sum: " << Statistics::sum(numbers) << endl;
     cout << "Min: " << Statistics::min(numbers) << endl;
