@@ -11,6 +11,7 @@ int main()
     assert(Statistics::sum(nums) == 15.0);
     assert(Statistics::min(nums) == 1.0);
     assert(Statistics::max(nums) == 5.0);
+    assert(Statistics::average(nums) == 3.0);
 
     cout << "All tests passed!"<<endl;
     return 0;
