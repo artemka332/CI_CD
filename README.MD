@@ -41,7 +41,6 @@ cmake --build .
 ctest --output-on-failure
 
 
-
 ### Описание методов
 
 #### `static double sum(vector<double>& data)`
