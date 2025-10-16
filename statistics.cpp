@@ -62,3 +62,21 @@ double Statistics:: average(vector<double>& data)
 
     return sum/data.size();
 }
+
+
+// Медиана
+double Statistics::median(vector<double> &data) 
+{
+    sort(data.begin(), data.end());
+    size_t n = data.size();
+
+    if (n % 2 == 0)
+    {
+        return (data[n / 2 - 1] + data[n / 2]) / 2.0;
+    } 
+    
+    else
+    {
+        return data[n / 2];
+    }
+}
