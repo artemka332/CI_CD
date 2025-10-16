@@ -29,6 +29,8 @@ int main()
     return 0;
 }
 
+```
+
 ## Сборка
 
 cmake .
@@ -39,9 +41,8 @@ cmake --build .
 ctest --output-on-failure
 
 
-Статический класс для выполнения статистических операций над набором данных.
 
-### Methods
+### Описание методов
 
 #### `static double sum(vector<double>& data)`
 Вычисляет сумму всех элементов в наборе данных.
