@@ -1,0 +1,38 @@
+\chapter{CI\+\_\+\+CD 1.\+1 — документация }
+\hypertarget{index}{}\label{index}\index{CI\_CD 1.1 — документация@{CI\_CD 1.1 — документация}}
+\hypertarget{index_intro}{}\doxysection{\texorpdfstring{О проекте}{О проекте}}\label{index_intro}
+Библиотека на C++ с базовыми статистическими функциями\+: sum, min, max, average, median. Класс \doxylink{class_statistics}{Statistics} работает с vector$<$double$>$.\hypertarget{index_build}{}\doxysection{\texorpdfstring{Сборка с помощью CMake}{Сборка с помощью CMake}}\label{index_build}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cmake\ .}
+\DoxyCodeLine{cmake\ -\/-\/build}
+
+\end{DoxyCode}
+\hypertarget{index_run}{}\doxysection{\texorpdfstring{Запуск исполняемых файлов}{Запуск исполняемых файлов}}\label{index_run}
+./main\hypertarget{index_usage}{}\doxysection{\texorpdfstring{Пример использования}{Пример использования}}\label{index_usage}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{statistics_8h}{statistics.h}}"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ vector<double>\ nums\ =\ \{1,\ 2,\ 3,\ 4,\ 5\};}
+\DoxyCodeLine{\ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}sum="{}}\ <<\ \mbox{\hyperlink{class_statistics_aade7b4cf406423a674125ea02398783a}{Statistics::sum}}(nums)\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}min="{}}\ <<\ \mbox{\hyperlink{class_statistics_a76bd7ae42eb5edbe320c407c9a58c2b7}{Statistics::min}}(nums)\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}max="{}}\ <<\ \mbox{\hyperlink{class_statistics_ae4f7d0ce080a2b24c5e0130aa5b89e5d}{Statistics::max}}(nums)\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}avg="{}}\ <<\ \mbox{\hyperlink{class_statistics_a57f5a7df515f39daf469c51a33c791f2}{Statistics::average}}(nums)\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}median="{}}\ <<\ \mbox{\hyperlink{class_statistics_a2fc6e463806b2af736bdeea6792ede87}{Statistics::median}}(nums)\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{index_docs}{}\doxysection{\texorpdfstring{Документация Doxygen}{Документация Doxygen}}\label{index_docs}
+Генерация HTML-\/документации\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{doxygen\ Doxyfile}
+\DoxyCodeLine{\#\ открыть:\ docs/html/index.html}
+
+\end{DoxyCode}
+ 

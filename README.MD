@@ -33,8 +33,8 @@ int main()
 
 ## Сборка
 
-cmake .
-cmake --build .
+-cmake .
+-cmake --build .
 
 ## Запуск тестов
 
