@@ -3,17 +3,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>CI_CD VERSION 1.1: CI_CD 1.1 — документация</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -34,20 +33,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.14.0 -->
+<!-- Создано системой Doxygen 1.9.8 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-</script>
-<script type="text/javascript">
-$(function() { codefold.init(); });
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск',true);
-  $(function() { init_search(); });
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
+/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -62,9 +62,10 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('index.html','',''); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
 </script>
-<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -91,17 +92,17 @@ $(function(){initNavTree('index.html','',''); });
   <div class="headertitle"><div class="title">CI_CD 1.1 — документация </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1 class="doxsection"><a class="anchor" id="intro"></a>
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
 О проекте</h1>
-<p>Библиотека на C++ с базовыми статистическими функциями: sum, min, max, average, median. Класс <a class="el" href="class_statistics.html">Statistics</a> работает с vector&lt;double&gt;.</p>
-<h1 class="doxsection"><a class="anchor" id="build"></a>
+<p>Библиотека на C++ с базовыми статистическими функциями: sum, min, max, average, median. Класс <a class="el" href="classStatistics.html">Statistics</a> работает с vector&lt;double&gt;.</p>
+<h1><a class="anchor" id="build"></a>
 Сборка с помощью CMake</h1>
 <div class="fragment"><div class="line">cmake .</div>
 <div class="line">cmake --build</div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="run"></a>
+</div><!-- fragment --><h1><a class="anchor" id="run"></a>
 Запуск исполняемых файлов</h1>
 <p>./main</p>
-<h1 class="doxsection"><a class="anchor" id="usage"></a>
+<h1><a class="anchor" id="usage"></a>
 Пример использования</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="statistics_8h.html">statistics.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -110,32 +111,30 @@ $(function(){initNavTree('index.html','',''); });
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    vector&lt;double&gt; nums = {1, 2, 3, 4, 5};</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;sum=&quot;</span> &lt;&lt; <a class="code hl_function" href="class_statistics.html#aade7b4cf406423a674125ea02398783a">Statistics::sum</a>(nums) &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;min=&quot;</span> &lt;&lt; <a class="code hl_function" href="class_statistics.html#a76bd7ae42eb5edbe320c407c9a58c2b7">Statistics::min</a>(nums) &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;max=&quot;</span> &lt;&lt; <a class="code hl_function" href="class_statistics.html#ae4f7d0ce080a2b24c5e0130aa5b89e5d">Statistics::max</a>(nums) &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;avg=&quot;</span> &lt;&lt; <a class="code hl_function" href="class_statistics.html#a57f5a7df515f39daf469c51a33c791f2">Statistics::average</a>(nums) &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;median=&quot;</span> &lt;&lt; <a class="code hl_function" href="class_statistics.html#a2fc6e463806b2af736bdeea6792ede87">Statistics::median</a>(nums) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;sum=&quot;</span> &lt;&lt; <a class="code hl_function" href="classStatistics.html#aade7b4cf406423a674125ea02398783a">Statistics::sum</a>(nums) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;min=&quot;</span> &lt;&lt; <a class="code hl_function" href="classStatistics.html#a76bd7ae42eb5edbe320c407c9a58c2b7">Statistics::min</a>(nums) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;max=&quot;</span> &lt;&lt; <a class="code hl_function" href="classStatistics.html#ae4f7d0ce080a2b24c5e0130aa5b89e5d">Statistics::max</a>(nums) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;avg=&quot;</span> &lt;&lt; <a class="code hl_function" href="classStatistics.html#a57f5a7df515f39daf469c51a33c791f2">Statistics::average</a>(nums) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;median=&quot;</span> &lt;&lt; <a class="code hl_function" href="classStatistics.html#a2fc6e463806b2af736bdeea6792ede87">Statistics::median</a>(nums) &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_statistics_html_a2fc6e463806b2af736bdeea6792ede87"><div class="ttname"><a href="class_statistics.html#a2fc6e463806b2af736bdeea6792ede87">Statistics::median</a></div><div class="ttdeci">static double median(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Медиана.</div><div class="ttdef"><b>Определения</b> statistics.cpp:73</div></div>
-<div class="ttc" id="aclass_statistics_html_a57f5a7df515f39daf469c51a33c791f2"><div class="ttname"><a href="class_statistics.html#a57f5a7df515f39daf469c51a33c791f2">Statistics::average</a></div><div class="ttdeci">static double average(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Среднее арифметическое.</div><div class="ttdef"><b>Определения</b> statistics.cpp:59</div></div>
-<div class="ttc" id="aclass_statistics_html_a76bd7ae42eb5edbe320c407c9a58c2b7"><div class="ttname"><a href="class_statistics.html#a76bd7ae42eb5edbe320c407c9a58c2b7">Statistics::min</a></div><div class="ttdeci">static double min(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Находит минимальный элемент.</div><div class="ttdef"><b>Определения</b> statistics.cpp:28</div></div>
-<div class="ttc" id="aclass_statistics_html_aade7b4cf406423a674125ea02398783a"><div class="ttname"><a href="class_statistics.html#aade7b4cf406423a674125ea02398783a">Statistics::sum</a></div><div class="ttdeci">static double sum(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Вычисляет сумму элементов.</div><div class="ttdef"><b>Определения</b> statistics.cpp:15</div></div>
-<div class="ttc" id="aclass_statistics_html_ae4f7d0ce080a2b24c5e0130aa5b89e5d"><div class="ttname"><a href="class_statistics.html#ae4f7d0ce080a2b24c5e0130aa5b89e5d">Statistics::max</a></div><div class="ttdeci">static double max(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Находит максимальный элемент.</div><div class="ttdef"><b>Определения</b> statistics.cpp:43</div></div>
+<div class="ttc" id="aclassStatistics_html_a2fc6e463806b2af736bdeea6792ede87"><div class="ttname"><a href="classStatistics.html#a2fc6e463806b2af736bdeea6792ede87">Statistics::median</a></div><div class="ttdeci">static double median(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Медиана.</div><div class="ttdef"><b>Definition</b> statistics.cpp:73</div></div>
+<div class="ttc" id="aclassStatistics_html_a57f5a7df515f39daf469c51a33c791f2"><div class="ttname"><a href="classStatistics.html#a57f5a7df515f39daf469c51a33c791f2">Statistics::average</a></div><div class="ttdeci">static double average(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Среднее арифметическое.</div><div class="ttdef"><b>Definition</b> statistics.cpp:59</div></div>
+<div class="ttc" id="aclassStatistics_html_a76bd7ae42eb5edbe320c407c9a58c2b7"><div class="ttname"><a href="classStatistics.html#a76bd7ae42eb5edbe320c407c9a58c2b7">Statistics::min</a></div><div class="ttdeci">static double min(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Находит минимальный элемент.</div><div class="ttdef"><b>Definition</b> statistics.cpp:28</div></div>
+<div class="ttc" id="aclassStatistics_html_aade7b4cf406423a674125ea02398783a"><div class="ttname"><a href="classStatistics.html#aade7b4cf406423a674125ea02398783a">Statistics::sum</a></div><div class="ttdeci">static double sum(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Вычисляет сумму элементов.</div><div class="ttdef"><b>Definition</b> statistics.cpp:15</div></div>
+<div class="ttc" id="aclassStatistics_html_ae4f7d0ce080a2b24c5e0130aa5b89e5d"><div class="ttname"><a href="classStatistics.html#ae4f7d0ce080a2b24c5e0130aa5b89e5d">Statistics::max</a></div><div class="ttdeci">static double max(vector&lt; double &gt; &amp;data)</div><div class="ttdoc">Находит максимальный элемент.</div><div class="ttdef"><b>Definition</b> statistics.cpp:43</div></div>
 <div class="ttc" id="astatistics_8h_html"><div class="ttname"><a href="statistics_8h.html">statistics.h</a></div><div class="ttdoc">Объявления функций базовой статистики.</div></div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="docs"></a>
+</div><!-- fragment --><h1><a class="anchor" id="docs"></a>
 Документация Doxygen</h1>
 <p>Генерация HTML-документации: </p><div class="fragment"><div class="line">doxygen Doxyfile</div>
 <div class="line"># открыть: docs/html/index.html</div>
 </div><!-- fragment --> </div></div><!-- PageDoc -->
-<a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
-</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

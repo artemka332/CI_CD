@@ -26,21 +26,6 @@ var NAVTREE =
 [
   [ "CI_CD VERSION 1.1", "index.html", [
     [ "CI_CD 1.1 — документация", "index.html", "index" ],
-    [ "Statistics Library", "md__r_e_a_d_m_e.html", [
-      [ "Описание", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Функциональность", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Использование", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
-      [ "Сборка", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "Запуск тестов", "md__r_e_a_d_m_e.html#autotoc_md5", [
-        [ "Описание методов", "md__r_e_a_d_m_e.html#autotoc_md6", [
-          [ "<span class=\"tt\">static double sum(vector&lt;double&gt;&amp; data)</span>", "md__r_e_a_d_m_e.html#autotoc_md7", null ],
-          [ "<span class=\"tt\">static double min(vector&lt;double&gt;&amp; data)</span>", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
-          [ "<span class=\"tt\">static double max(vector&lt;double&gt;&amp; data)</span>", "md__r_e_a_d_m_e.html#autotoc_md9", null ],
-          [ "<span class=\"tt\">static double average(vector&lt;double&gt;&amp; data)</span>", "md__r_e_a_d_m_e.html#autotoc_md10", null ],
-          [ "<span class=\"tt\">static double median(vector&lt;double&gt;&amp; data)</span>", "md__r_e_a_d_m_e.html#autotoc_md11", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель классов", "classes.html", null ],
@@ -62,4 +47,3 @@ var NAVTREEINDEX =
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
 var SYNCOFFMSG = 'нажмите на включить для синхронизации панелей';
-var LISTOFALLMEMBERS = 'Полный список членов класса';
