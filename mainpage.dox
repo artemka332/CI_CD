@@ -1,0 +1,44 @@
+/*!
+@mainpage CI_CD 1.1 — документация
+
+@section intro О проекте
+Библиотека на C++ с базовыми статистическими функциями: sum, min, max, average, median.
+Класс @ref Statistics работает с vector<double>.
+
+@section build Сборка с помощью CMake
+
+@code{.bash}
+cmake .
+cmake --build
+@endcode
+
+@section run Запуск исполняемых файлов
+./main
+
+@section usage Пример использования
+@code{.cpp}
+#include "statistics.h"
+#include <vector>
+#include <iostream>
+
+int main()
+{
+    vector<double> nums = {1, 2, 3, 4, 5};
+    cout << "sum=" << Statistics::sum(nums) << endl;
+    cout << "min=" << Statistics::min(nums) << endl;
+    cout << "max=" << Statistics::max(nums) << endl;
+    cout << "avg=" << Statistics::average(nums) << endl;
+    cout << "median=" << Statistics::median(nums) << endl;
+    return 0;
+}
+@endcode
+
+@section docs Документация Doxygen
+Генерация HTML-документации:
+@code{.bash}
+doxygen Doxyfile
+# открыть: docs/html/index.html
+@endcode
+
+
+*/

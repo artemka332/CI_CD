@@ -6,6 +6,11 @@
 
 using namespace std;
 
+/*!
+  @file statistics.cpp
+  @brief Реализация функций класса Statistics.
+*/
+
 // функция вычисления суммы вектора
 double Statistics::sum(vector<double>& data) 
 {
@@ -67,16 +72,18 @@ double Statistics:: average(vector<double>& data)
 // Медиана
 double Statistics::median(vector<double> &data) 
 {
-    sort(data.begin(), data.end());
-    size_t n = data.size();
+    vector <double> work_data = data;
+
+    sort(work_data.begin(), work_data.end());
+    size_t n = work_data.size();
 
     if (n % 2 == 0)
     {
-        return (data[n / 2 - 1] + data[n / 2]) / 2.0;
+        return (work_data[n / 2 - 1] + work_data[n / 2]) / 2.0;
     } 
     
     else
     {
-        return data[n / 2];
+        return work_data[n / 2];
     }
 }
