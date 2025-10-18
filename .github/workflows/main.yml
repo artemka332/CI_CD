@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Install dependencies
-      run: sudo apt update && sudo apt install -y cmake g++
+      run: sudo apt update && sudo apt install -y cmake g++ doxygen
 
     - name: List files for debug
       run: ls -la
@@ -30,3 +30,19 @@ jobs:
 
     - name: Test code
       run: ctest --output-on-failure
+    
+    - name: Generate Documentation
+      run: doxygen doxygen_file
+
+    - name: Setup git identity
+      if: github.event_name == 'push'
+      run: |
+        git config --global user.email "artemkasashin@yandex.ru"
+        git config --global user.name "artemka332"
+        
+    - name: Commit documentation changes
+      if: github.event_name == 'push'
+      run: |
+        git add docs/
+        git commit -m "Auto-update documentation" || echo "No changes to commit"
+        git push 
