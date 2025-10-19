@@ -1,4 +1,4 @@
 var statistics_8h =
 [
-    [ "Statistics", "classStatistics.html", null ]
+    [ "Statistics", "classStatistics.html", "classStatistics" ]
 ];
