@@ -12,7 +12,7 @@ using namespace std;
 */
 
 // функция вычисления суммы вектора
-double Statistics::sum(vector<double>& data) 
+double Statistics::sum(vector<double> data) 
 {
     if(data.size() == 0)
     {
@@ -31,7 +31,7 @@ double Statistics::sum(vector<double>& data)
 }
 
 // функция вычисления минимального значения вектора
-double Statistics::min(vector<double>& data)
+double Statistics::min(vector<double> data)
 {
 
     if(data.size() == 0)
@@ -53,7 +53,7 @@ double Statistics::min(vector<double>& data)
     return min;
 }
 
-double Statistics::max(vector<double>& data)
+double Statistics::max(vector<double> data)
 {
     if(data.size() == 0)
     {
@@ -75,7 +75,7 @@ double Statistics::max(vector<double>& data)
 }
 
 
-double Statistics:: average(vector<double>& data)
+double Statistics:: average(vector<double> data)
 {
     if(data.size() == 0)
     {
@@ -95,7 +95,7 @@ double Statistics:: average(vector<double>& data)
 
 
 // Медиана
-double Statistics::median(vector<double> &data) 
+double Statistics::median(vector<double> data) 
 {
 
     if(data.size() == 0)
@@ -103,19 +103,17 @@ double Statistics::median(vector<double> &data)
         cout<<"Ошибка!!! Вектор имеет нулевую длину!!!!!"<<endl;
         return -1;
     }
-    
-    vector <double> work_data = data;
 
-    sort(work_data.begin(), work_data.end());
-    size_t n = work_data.size();
+    sort(data.begin(),data.end());
+    size_t n = data.size();
 
     if (n % 2 == 0)
     {
-        return (work_data[n / 2 - 1] + work_data[n / 2]) / 2.0;
+        return (data[n / 2 - 1] + data[n / 2]) / 2.0;
     } 
     
     else
     {
-        return work_data[n / 2];
+        return data[n / 2];
     }
 }
