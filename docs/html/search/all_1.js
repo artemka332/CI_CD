@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['average_0',['average',['../classStatistics.html#a57f5a7df515f39daf469c51a33c791f2',1,'Statistics']]]
+  ['average_0',['average',['../classStatistics.html#a4afb2b30beb195008a721b44806f71dd',1,'Statistics']]]
 ];
